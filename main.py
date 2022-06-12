@@ -16,7 +16,7 @@ from brep_mi import attack
 if __name__ == "__main__":
     global args, logger
 
-    parser = ArgumentParser(description='A tool that applies Label Only Model Inversion Attack using only.')
+    parser = ArgumentParser(description='A tool that applies Label Only Model Inversion Attack using labels only.')
     parser.add_argument('--target_model', default='FaceNet64', help='VGG16 | IR152 | FaceNet64')
     parser.add_argument('--target_model_path', type=str, help='path to target_model')
     parser.add_argument('--evaluator_model', default='FaceNet', help='VGG16 | IR152 | FaceNet64| FaceNet')
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     parser.add_argument('--config_file', type=str, help='config file that has attack params', required = True)
     parser.add_argument('--private_imgs_path', type=str, default='', help='Path to groundtruth images to copy them to attack dir. Empty string means, our tool will not copy.')
     parser.add_argument('--n_classes', type=int, default=1000, help='num of classes of target model')
-    parser.add_argument('--n_classes_evaluator', type=int, default=1000, help='num of classes of target model')
+    parser.add_argument('--n_classes_evaluator', type=int, default=1000, help='num of classes of evaluator model')
     args = parser.parse_args()
 
     print(args)
