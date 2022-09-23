@@ -52,4 +52,4 @@ example to run an attack on the models given above:
 
     python3 main.py --target_model=FaceNet64 --target_model_path=models/FaceNet64_88.50.tar  --device=0 --experiment_name=celebA_facenet_config2  --config_file=/config2.yaml  --private_imgs_path='' --n_classes=1000 --n_classes_evaluator=1000 --evaluator_model=FaceNet --evaluator_model_path=models/target_ckp/FaceNet_95.88.tar --generator_model_path=models/celeba_G.tar
 
-For any bugs, please report at kahla@vt.edu
+For any questions, please email kahla@vt.edu
